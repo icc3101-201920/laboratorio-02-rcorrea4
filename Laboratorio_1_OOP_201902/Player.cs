@@ -28,8 +28,8 @@ namespace Laboratorio_1_OOP_201902
         {
             LifePoints = LIFE_POINTS;
             AttackPoints = START_ATTACK_POINTS;
-            Deck = new Deck();
-            Hand = new Hand();
+            Deck = new Deck(new List<SpecialCard>(), new List<CombatCard>());
+            Hand = new Hand(new List<SpecialCard>(),new List<CombatCard>());
             Id = idCounter++;
         }
 
@@ -121,7 +121,11 @@ namespace Laboratorio_1_OOP_201902
         }
         public void ChooseCaptainCard(SpecialCard captainCard)
         {
-            throw new NotImplementedException();
+            
+                hand.AddSpecialCard(captainCard);
+            
+            
         }
+
     }
 }

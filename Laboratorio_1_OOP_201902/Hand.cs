@@ -9,7 +9,8 @@ namespace Laboratorio_1_OOP_201902
     {
         public Hand(List<SpecialCard> specialcards, List<CombatCard> combatcards) : base(specialcards,combatcards)
         {
-
+            this.combatCards = combatcards;
+            this.SpecialCards = specialcards;
         }
         
 
